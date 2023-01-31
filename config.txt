@@ -1,0 +1,40 @@
+;By Alexander Malkov
+;This is a config file that is used to configure the calculation in the main_config.py file
+;You can change values as desired to play around with parameters. Limitations of input values are noted below
+
+[define-plots]
+;Boolean values: remove X if plot not desired. X can also be any value
+plot_data = X
+plot_training = X
+plot_testing = X
+plot_prediction = X
+
+[define-random]
+;This defines wether numpy random_seed(10) is used for reproducible results if you want to play with parameters 
+random_seed = X
+
+[define-dataset]
+;Must be an integer between 1 and 5000
+samples = 300
+;Must be a an integer between 1 and 10
+classes = 3
+;Two options available: vertical or spiral
+data_kind = spiral
+
+[define-calc]
+;Two variants available: CalcTanh and CalcSoftmax
+;CalcTanh uses dense layers with tanh activation function on all layers with MSE loss function
+;CalcSoftmax uses dense layers with Leaky ReLu activations for all layers except the output layer
+;   output layers uses Softmax activation and Categorical Cross-Entropy loss funciton
+calc_kind = CalcTanh
+;Must be a an integer between 1 and 20
+hidden_size = 5
+;Must be a an integer between 1 and 10. CalcSoftmax can be numerically unstable with hidden_number>1
+hidden_number = 1
+;for CalcSoftmax only, ignored otherwise
+alpha = 0.05 
+
+[define-training]
+learning_rate = 0.1
+epochs = 100
+
