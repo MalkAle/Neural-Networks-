@@ -11,7 +11,7 @@ This repository consists of 2 executables:
 
 XOR.py is a single script to approximate the XOR dataset. It is a very basic script, but all the basics of creating a neural network, training the netework and prediction of results for a given datapoint are there. This is the very first neural network from scratch I have ever coded and it is very close to the tutorial 1.
 
-main_config.py is based on the idea from tutorial 2, but the tutorial turned out not to be complete. It features only the forward part of neural network training. From there on one has to pay for it (as of the time I started the project). So I decided to take the challenge and to code a script to solve the spiral and vertical datasets from tutorial 2 using the math from XOR dataset in tutorial 1. I have implemented following additional features required from caclculation 
+main_config.py is based on the idea from tutorial 2, but the tutorial turned out not to be complete. It features only the forward part of neural network training. From there on one has to pay for it (as of the time I started the project). So I decided to take the challenge and to code a script to solve the spiral and vertical datasets from tutorial 2 using the math from XOR dataset in tutorial 1. I have implemented following additional features required from calculation 
 - reshaping data
 - creation of dummy variables
 - train-test-split. 
@@ -34,4 +34,4 @@ Please see some graphics from main_config.py below.
 <img src="Pics/testing.png" width="600" style="display: block; margin: 0 auto">
 <img src="Pics/predicting.png" width="300" style="display: block; margin: 0 auto">
 
-Now try it yourself, feedback very much appreciated! :)
+Now try it yourself! Read config.txt file, run main_config.py. Try different configurations by changing the config.txt. Feedback very much appreciated! Thanks :)
