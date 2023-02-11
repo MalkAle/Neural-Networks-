@@ -8,15 +8,20 @@ This repository consists of 2 executables:
 - XOR.py
 - main_config.py
 
-XOR.py is a single script to approximate the XOR dataset. It is a very basic script, but all the basics of creating a neural network, training the netework and prediction of results for a given datapoint are there. This is the very first neural network from scratch I have ever coded and it is very close to the tutorial 1.
+XOR.py is a single script to approximate the XOR dataset. It is a very basic script, but all the basics of creating a neural network, training the network and prediction of results for a given datapoint are there. This is the very first neural network from scratch I have ever coded and it is very close to the tutorial 1.
 
-main_config.py is based on the idea from tutorial 2, but the tutorial turned out not to be complete. It features only the forward part of neural network training. From there on one has to pay for it (as of the time I started the project). So I decided to take the challenge and to code a script to solve the spiral and vertical datasets from tutorial 2 using the math from XOR dataset in tutorial 1. I have implemented following additional features required from calculation: 
+main_config.py is based on the idea from tutorial 2, but the tutorial turned out to be incomplete. It features only the forward part of neural network training. From there on one has to pay for it (as of the time I started the project). So I decided to take the challenge and to code a script to solve the spiral and vertical datasets from tutorial 2 using the math from XOR dataset in tutorial 1. I have implemented following additional features required from calculation: 
 - reshaping data
 - creation of dummy variables
 - train-test-split. 
 
 Furthermore I have added following extra features: 
-- interactive user input 
+- interactive user input that allows the user to control the following 
+    - functionality of the program 
+    - 2 different datasets with different configuraions (number of classes and number of datapoints)
+    - Number and size of hidden layers
+    - 2 different solvers (tanh vs leaky relu and softmax)
+    - learning rate and number of epochs used to trainthe model
 - exception handling
 - reusable modules and functions wherever feasible in an effort co create a code that is easier to understand and to maintain
 - reading data from a configuration file for a structured user input
