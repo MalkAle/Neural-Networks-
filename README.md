@@ -15,16 +15,16 @@ main_config.py is based on the idea from tutorial 2, but the tutorial turned out
 - creation of dummy variables
 - train-test-split. 
 
-Furthermore I have added following extra features: 
-- interactive user input that allows the user to control the following 
-    - functionality of the program 
-    - 2 different datasets with different configuraions (number of classes and number of datapoints)
-    - Number and size of hidden layers
-    - 2 different solvers (tanh vs leaky relu and softmax)
-    - learning rate and number of epochs used to trainthe model
+Furthermore I have added following extra features (also without using machine learning libraries): 
+- interactive user input that allows the user to control the functionality of the program
 - exception handling
 - reusable modules and functions wherever feasible in an effort co create a code that is easier to understand and to maintain
-- reading data from a configuration file for a structured user input
+- reading data from a configuration file for a structured user input that allows the user to control the following 
+    - functionality of the program 
+    - 2 different datasets with different configurations (number of classes and number of datapoints)
+    - number and size of hidden layers
+    - 2 different solvers (tanh and leaky relu + softmax)
+    - learning rate and number of epochs used to train the model
 - creating pre-defined configurable neural networks with minimal user input
 - evaluation metrics: multi-class confusion matrix and classification report
 - saving the trained model as an *.npy file 
