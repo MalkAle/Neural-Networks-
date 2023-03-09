@@ -30,6 +30,19 @@ Furthermore I have added following extra features (also without using machine le
 - loading the trained model to calculate predictions for a datapoint
 - plotting decision boundaries for predictions.
 
+How to operate/what it does
+1. Open the config.txt file and have a look at parameters. You can run it as is at first or change parameters as described in the document. 
+2. Run the config.py file
+3. Provide input depending on what you want to do. Type "t" if you want to create a new network, "p" if you want to predict the class for a given data point based on the trained network saved in the "model.npy" file, "q" to quit
+4. A dataset is generated, you can check the shapes in the output of the terminal. Wait a cople od seconds until the plot with datapoints has been created.
+5. Provide input to create network or quit
+6. Network is created, you can check the layer parameters as well as the training parameters in the output of the terminal
+7. Provide input to train network or quit, the number of current training epoch is shown in the terminal output. Wait a couple of seconds until the plot has been created.
+8. Network is saved in the "model.npy" file.
+9. Provide input to continue with testing or to quit. The network is loaded from the "model.npy"  file. Check the terminal output for confusion matrix and classification report. Wait a couple of seconds until the plot has been created.
+10. Provide input to continue with prediction or quit
+11. Enter the x- and y-coordinates for the datapoint you want to predict the class for. Wait a couple of seconds until the plot has been created. Enter another datapoint or "q" to quit.
+
 Please see some graphics from main_config.py below.
 <img src="Pics/data.png" width="600" style="display: block; margin: 0 auto">
 <img src="Pics/training.png" width="600" style="display: block; margin: 0 auto">

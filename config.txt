@@ -15,7 +15,7 @@ random_seed = X
 
 [define-dataset]
 ;Must be an integer between 1 and 5000
-samples = 300
+samples = 200
 ;Must be a an integer between 1 and 10
 classes = 3
 ;Two options available: vertical or spiral

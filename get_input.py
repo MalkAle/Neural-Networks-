@@ -52,6 +52,6 @@ def get_input_pred():
                     x = np.reshape([x_input, y_input], (2, 1))
                     return x
         except ValueError:
-            print('\nERROR: bad input, Try again please.\n')
-            break
+            print('\nERROR: bad input, Try again please. Datapoint should be in the range between but not uncluding -1 and 1.\n')
+            continue
         
